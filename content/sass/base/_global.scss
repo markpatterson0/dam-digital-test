@@ -1,0 +1,11 @@
+﻿a, button {
+    outline: none;
+}
+
+
+.btn {
+    &.btn-primary {
+        background-color: $red;
+        border-color: $dark-red;
+    }
+}

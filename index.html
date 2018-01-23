@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <title>Client Home Page</title>
+    <link rel="stylesheet" type="text/css" href="content/stylesheets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="content/stylesheets/screen.css">
+</head>
+<body>
+    <div class="modal" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Are you sure you want to delete this product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-delete-js">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="text-center">
+                <h1>Welcome to</h1>
+                <div class="row">
+                    <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                        <img class="logo" src="content/images/logo-company-42.svg" alt="company 42 logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <nav class="main-navigation">
+                <ul class="nav nav-pills nav-stacked sticky">
+                    <li role="presentation"><a href="#products">Products</a></li>
+                    <li role="presentation"><a href="#staff">Staff</a></li>
+                    <li role="presentation"><a href="#register">Register</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <h2 id="products">Products</h2>
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x450" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur bene. At certe gravius. </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x600" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Optime, inquam. Nos vero, inquit ille; Nam ante Aristippus, et ille melius. Quid sequatur, quid repugnet, vident. Polycratem Samium felicem appellabant. </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x620" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Perge porro; Hic ambiguo ludimur. Haec quo modo conveniant, non sane intellego. Sed haec omittamus; Hic ambiguo ludimur. Nunc vides, quid faciat. </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x307" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Negare non possum. Frater et T. Nulla erit controversia. Quid Zeno? Nunc de hominis summo bono quaeritur; </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x506" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>In schola desinis. Rationis enim perfectio est virtus; Urgent tamen et nihil remittunt. Maximus dolor, inquit, brevis est. Is es profecto tu. Ut aliquid scire se gaudeant? </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x805" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est. Hoc est non dividere, sed frangere. Istic sum, inquit. Faceres tu quidem, Torquate, haec omnia; Quid de Pythagora? </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x804" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est. Hoc est non dividere, sed frangere. Istic sum, inquit. Faceres tu quidem, Torquate, haec omnia; Quid de Pythagora? </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x803" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est. Hoc est non dividere, sed frangere. Istic sum, inquit. Faceres tu quidem, Torquate, haec omnia; Quid de Pythagora? </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 column">
+                        <div class="card">
+                            <div class="card-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x802" alt="product image description">
+                            </div>
+                            <div class="card-description">
+                                <h3>Product</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est. Hoc est non dividere, sed frangere. Istic sum, inquit. Faceres tu quidem, Torquate, haec omnia; Quid de Pythagora? </p>
+                            </div>
+                            <div class="card-controllers">
+                                <button class="favorite">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                    <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543
+                                        c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503
+                                        c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
+                                    </svg>
+                                </button>
+                                <button class="delete" data-toggle="modal" data-target="#deleteModal"><span>&times;</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="staff">Staff</h2>
+                <div class="staff-member">
+                    <div class="row is-align-left">
+                        <div class="col-4">
+                            <div class="staff-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x500" alt="staff portrait description">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="staff-bio">
+                                <h3>Joe Doe</h3>
+                                <p>
+                                    Duo Reges: constucto interrete. Prodest, niquit, mihi eo esse animo. Vide, quantum, inquam, failare, Torquate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <div class="row">
+                        <div class="col-4 order-last">
+                            <div class="staff-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x501" alt="staff portrait description">
+                            </div>
+                        </div>
+                        <div class="col order-first">
+                            <div class="staff-bio">
+                                <h3>Joe Doe</h3>
+                                <p>
+                                    Duo Reges: constucto interrete. Prodest, niquit, mihi eo esse animo. Vide, quantum, inquam, failare, Torquate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <div class="row is-align-left">
+                        <div class="col-4">
+                            <div class="staff-img">
+                                <img class="img-responsive" src="https://source.unsplash.com/500x502" alt="staff portrait description">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="staff-bio">
+                                <h3>Joe Doe</h3>
+                                <p>
+                                    Duo Reges: constucto interrete. Prodest, niquit, mihi eo esse animo. Vide, quantum, inquam, failare, Torquate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="register">
+        <div class="container">
+            <!--<div class="text-center">-->
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-6 col-lg-offset-3">
+                        <form>
+                            <h2 id="register" class="text-center">Register to our news letter!</h2>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" class="form-control" id="age" placeholder="Age" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" required />
+                            </div>
+
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+
+                        <div class="disclaimer-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu congue urna. Nulla quis aliquet tellus. Integer sapien nisi, imperdiet et est et, efficitur placerat lacus. Nunc vitae molestie ipsum, vitae luctus diam. Curabitur nec lectus augue. Fusce tincidunt sodales lobortis. Duis eleifend cursus mauris ac sollicitudin. 
+                            </p>
+                            <p>
+                                Donec imperdiet nunc tempus diam volutpat ultrices at eget nunc. Sed egestas dapibus arcu at bibendum. Integer sodales dui dui, eget accumsan justo dignissim ac. Aliquam blandit, eros in scelerisque dictum, sem risus varius purus, ac sollicitudin ex nibh vitae mi. Quisque ullamcorper, ipsum vel congue sagittis, mauris sapien mattis nisl, ac faucibus mi augue eget ligula. Pellentesque aliquam aliquet aliquam. 
+                            </p>
+                            <p>
+                                Sed fermentum ultrices ante, convallis ultricies orci maximus in. Morbi libero tellus, tempor eu efficitur et, ultrices in magna. Integer ultricies suscipit ullamcorper. Suspendisse nisl libero, condimentum in pulvinar id, euismod quis enim. Curabitur feugiat, risus id iaculis luctus, leo felis facilisis metus, at varius odio dui quis massa. Fusce quis odio quis quam accumsan facilisis. Fusce tincidunt tincidunt eleifend. 
+                            </p>
+                            <p>
+                                Nunc ornare libero vitae auctor aliquet. Nam ultrices diam tristique, blandit ante eget, laoreet odio. Ut sed aliquam eros, eget varius urna. Cras egestas volutpat consequat.
+                            </p>
+                            <p>
+                                In hac habitasse platea dictumst. Mauris luctus gravida augue sed convallis. Nullam ornare eros in arcu rhoncus, vitae maximus nisl venenatis. Nulla semper vestibulum ligula, sit amet sodales metus. Ut lectus dui, vestibulum id turpis mollis, efficitur euismod sapien. Donec hendrerit nisl aliquet metus tempor, in lobortis elit pretium.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!--</div>-->
+        </div>
+    </footer>
+
+    <script src="content/js/vendors/jquery-3.2.1.min.js"></script>
+    <script src="content/js/vendors/bootstrap.min.js"></script>
+    <!-- https://github.com/bfred-it/object-fit-images -->
+    <script src="content/js/vendors/ofi.min.js"></script>
+    <!-- https://github.com/wilddeer/stickyfill -->
+    <script src="content/js/vendors/stickyfill.js"></script>
+    <script src="content/js/card.js"></script>
+    <script src="content/js/navigation.js"></script>
+    <script src="content/js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+
+    .main-content{
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-sm-12, .col-md-4 {
+            display: flex;
+        }
+    }
+}
